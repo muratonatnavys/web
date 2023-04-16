@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-m(wugd@52d6ygut#u63mcg01(6t$cc=2s@($wn*x!wp=(w90f3
 DEBUG = True
 
 ALLOWED_HOSTS = ['3.72.52.24','local host']
+ALLOWED_HOSTS = ['*']
 
 
 
@@ -134,10 +135,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (     
-os.path.join(BASE_DIR, 'static'), 
-) 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
