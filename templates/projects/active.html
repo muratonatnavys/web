@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block content %}
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>ПРОЕКТЫ</h2>
+      
+    </div>
+
+    <ul  class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+      <button class="btn  btn-outline-light glow mb-1 mb-sm-0 mr-0 mr-sm-1"><a href="{% url 'projects:projects'%}">ВСЕ ПРОЕКТЫ</a></button>
+      <button class="btn  btn-outline-light glow mb-1 mb-sm-0 mr-0 mr-sm-1"><a href="{% url 'projects:active'%}">ТЕКУЩИЕ ПРОЕКТЫ</a></button>
+      <button class="btn  btn-outline-light glow mb-1 mb-sm-0 mr-0 mr-sm-1"><a href="{% url 'projects:passive'%}">ЗАВЕРШЕННЫЕ ПРОЕКТЫ</a></button>
+      
+    </ul>
+    <h4 >&nbsp;</h5>
+
+    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+      {% for item in object_list %}
+      <div class="col-lg-3 col-md-6 portfolio-item ">
+        <div class="portfolio-img"><img src= " {{item.project_image.url }} " class="img-fluid" alt=""></div>
+        <div class="portfolio-info">
+          <h4><a href="{% url 'projects:detail' item.pk %}">{{ item.project_name }}</a></h4>
+          <p>{{ item.company_name }}</p>
+          
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+
+{% endblock content %}

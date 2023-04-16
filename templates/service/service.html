@@ -1,0 +1,101 @@
+
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+<!-- ======= Services Section ======= -->
+<section id="services" class="services section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>УСЛУГИ</h2>
+        <p>ПРАВИЛЬНЫЙ АДРЕС ДЛЯ ВАШИХ РЕШЕНИЙ!</p>
+      </div>
+
+      <div class="row">
+        <div class="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box">
+            <img src="{% static 'assets/img/why-us.png' %}" class="img-fluid" alt="">
+            <h4><a href="{% url 'services:bms'%}">АВТОМАТИЗАЦИЯ ЗДАНИЙ</a></h4>
+            <p>Системы автоматизации зданий, обеспечивающие комфортные условия в зданиях и их энергоэффективность, благодаря «Вентум» находятся под управлением и контролем.Читайте </p><a href="{% url 'services:bms'%}">Далее >></a>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box">
+            <img src="{% static 'assets/img/service/efficiency.jpeg' %}" class="img-fluid" alt="">
+            <h4><a href="{% url 'services:ems'%}">АВТОМАТИЗАЦИЯ ЭНЕРГЕТИЧЕСКИХ РЕСУРСОВ</a></h4>
+            <p>Системы автоматизации энергетических ресурсов условно можно разделить на 2 вида: система мониторинга потребления и мониторинга уровня защиты.</p>
+            <a href="{% url 'services:ems'%}">Далее >></a>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box">
+            
+            <img src="{% static 'assets/img/service/fire_1.jpeg' %}" class="img-fluid" alt="">
+            <h4><a href="{% url 'services:fire'%}">СИСТЕМЫ ОБНАРУЖЕНИЯ ПОЖАРА</a></h4>
+            <p>Системы обнаружения пожара состоят из таких элементов, как: панель управления, пожарные извещатели, кнопки пожарной сигнализации, сирены и проблесковые световые оповещатели.</p><a href="{% url 'services:fire'%}">Далее >></a></div>
+          </div>
+      </div>
+
+      <h5 >&nbsp;</h5>
+
+      <div class="row">
+        <div class="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box">
+            <img src="{% static 'assets/img/service/pava_2.png' %}" class="img-fluid" alt="">
+            <h4><a href="{% url 'services:pava'%}">СИСТЕМЫ АВАРИЙНОГО ОПОВЕЩЕНИЯ И ОБЩЕГО ЗВУКОВОГО ОПОВЕЩЕНИЯ</a></h4>
+            <p>Системы аварийного оповещения и общего звукового оповещения применяются в таких зданиях, как: транспортные терминалы, общественные здания, офисные здания, школы, университеты с целью управляемой голосовой </p><a href="{% url 'services:pava'%}">Далее >></a>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box">
+            <img src="{% static 'assets/img/service/cctv_1.png' %}" class="img-fluid" alt="">
+            <h4><a href="{% url 'services:cctv'%}">СИСТЕМЫ ВИДЕОНАБЛЮДЕНИЯ (CCTV)</a></h4>
+            <p>Мониторинг зданий в целях безопасности, мониторинг и управление транспортным движением, системы распознавания автомобильных регистрационных номеров и системы подсчета людей являются основными сферами применения систем видеонаблюдения.</p>
+            <a href="{% url 'services:cctv'%}">Далее >></a>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box">
+            
+            <img src="{% static 'assets/img/service/mcc_2.jpeg' %}" class="img-fluid" alt="">
+            <h4><a href="{% url 'services:panel'%}">РЕШЕНИЯ ПО ШКАФАМ</a></h4>
+            <p>Шкафы управления двигателем (MCC), шкафы системы автоматизации и электрические шкафы проектируются в соответствии с потребностями вашего проекта, обеспечивается бесперебойная работа систем, благодаря применению качественной продукции.</p><a href="{% url 'services:panel'%}">Далее >></a></div>
+          </div>
+        </div>
+
+      <h5 >&nbsp;</h5>
+
+      <div class="row">
+        <div class="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box">
+            <img src="{% static 'assets/img/service/lighting_1.png' %}" class="img-fluid" alt="">
+            <h4><a href="{% url 'services:lighting'%}">АВТОМАТИЗАЦИЯ ОСВЕЩЕНИЯ</a></h4>
+            <p>Мы обеспечиваем комфортные условия и энергоэффективность благодаря системе автоматизации освещения, которая является важной частью интеллектуальных зданий. </p><a href="{% url 'services:lighting'%}">Далее >></a>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box">
+            <img src="{% static 'assets/img/service/audio_1.jpeg' %}" class="img-fluid" alt="">
+            <h4><a href="{% url 'services:audio'%}">ПРОФЕССИОНАЛЬНЫЕ АУДИО-, ВИДЕОСИСТЕМЫ</a></h4>
+            <p>Конференц-залы, развлекательные центры, театры, кинотеатры, спортивные сооружения – основные области, где используются профессиональные аудио- и видеосистемы.</p>
+            <a href="{% url 'services:audio'%}">Далее >></a>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box">
+            
+            <img src="{% static 'assets/img/service/access_2.jpeg' %}" class="img-fluid" alt="">
+            <h4><a href="{% url 'services:access'%}">СИСТЕМЫ КОНТРОЛЯ И УПРАВЛЕНИЯ ДОСТУПОМ</a></h4>
+            <p>Созданные в целях безопасности системы контроля и управления доступом, посредством специальных карточных пропусков, выданных персонально, позволяют входить и выходить в определенные помещения или зоны только.</p><a href="{% url 'services:access'%}">Далее >></a></div>
+          </div>
+      </div>    </div>
+  </section><!-- End Services Section -->
+  {% endblock content %}

@@ -1,0 +1,32 @@
+
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+<!-- ======= Services Section ======= -->
+    
+    <section id="skills" class="skills">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="row">
+            <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+              <img src="{% static 'assets/img/service/mcc_1.jpeg' %}" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+            <h3>Решения по шкафам</h3>
+              <p class="fst-italic">
+                Системы автоматизации зданий, обеспечивающие комфортные условия в зданиях и их энергоэффективность, благодаря «Вентум» находятся под управлением и контролем.
+
+                Шкафы управления двигателем (MCC), шкафы системы автоматизации и электрические шкафы проектируются в соответствии с потребностями вашего проекта, обеспечивается бесперебойная работа систем, благодаря применению качественной продукции.
+              </p>
+
+  
+            </div>
+          </div>
+  
+        </div>
+      </section>
+        
+
+  {% endblock content %}

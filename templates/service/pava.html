@@ -1,0 +1,32 @@
+
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+<!-- ======= Services Section ======= -->
+    
+    <section id="skills" class="skills">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="row">
+            <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+              <img src="{% static 'assets/img/service/pava_2.png' %}" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+              <h3>Системы аварийного оповещения и общего звукового оповещения</h3>
+              <p class="fst-italic">
+                Системы аварийного оповещения и общего звукового оповещения применяются в таких зданиях, как: транспортные терминалы, общественные здания, офисные здания, школы, университеты с целью управляемой голосовой эвакуации и музыкальных трансляций и могут работать интегрировано совместно с системами обнаружения пожара.
+
+Компания «Вентум», внедряя специальные продукты, предлагает своим клиентам исправно и бесперебойно функционирующие решения для систем аварийного оповещения и общего звукового оповещения.
+              </p>
+
+  
+            </div>
+          </div>
+  
+        </div>
+      </section>
+        
+
+  {% endblock content %}

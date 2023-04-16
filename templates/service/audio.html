@@ -1,0 +1,32 @@
+
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+<!-- ======= Services Section ======= -->
+    
+    <section id="skills" class="skills">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="row">
+            <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+              <img src="{% static 'assets/img/service/audio_1.jpeg' %}" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+              <h3>Профессиональные аудио-, видеосистемы</h3>
+              <p class="fst-italic">
+                Конференц-залы, развлекательные центры, театры, кинотеатры, спортивные сооружения – основные области, где используются профессиональные аудио- и видеосистемы.
+
+Как Ventum, мы разрабатываем для вас профессиональные звуковые системы ведущих международных брендов и поставляем их в индивидуальном состоянии.
+              </p>
+
+  
+            </div>
+          </div>
+  
+        </div>
+      </section>
+        
+
+  {% endblock content %}

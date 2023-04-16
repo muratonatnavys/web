@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block content %}
+
+<!-- ======= Portfolio Details Section ======= -->
+<section id="portfolio-details" class="portfolio-details">
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-8">
+          <div class="portfolio-details-slider swiper">
+            <div class="align-items-center">
+
+              <div class="swiper-slide">
+                <div class="portfolio-img"  ><img src= " {{projects.project_image.url }} " class="img-fluid" alt=""></div>
+              </div>
+
+        
+
+            </div>
+           
+          </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="portfolio-info">
+                <h3>Информационный проект</h3>
+                <ul>
+                <li><strong>Название проекта : </strong>{{projects.project_name}}</li>
+                <li><strong>Название компании : </strong>{{projects.company_name}}</li>
+                <li><strong>Project date : </strong>{{projects.project_start | date:'M Y ' }} - {{projects.project_finished | date:'M Y ' }}</li>
+                <li><strong>проект_местоположение :</strong> {{projects.project_location}}</li>
+                </ul>
+            </div>
+            <div class="portfolio-description">
+                <table class="table table-borderless">
+                    <tbody>
+                        {% for soft in sofware %}
+                        <tr>
+                            <td>-</td>
+                            <td>{{soft.software}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                <table class="table table-borderless">
+                    <tbody>
+                        {% for hardwares in hardware %}
+                        <tr>
+                            <td>-</td>
+                            <td>{{hardwares.hardware}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Portfolio Details Section -->
+  {% endblock content %}
